@@ -8,11 +8,11 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/home/swapnil/Documents/GRRAS/apache-maven-3.6.0/bin/mvn install'
+			  sh '/home/puja/Downloads/apache-maven-3.8.7/bin/mvn install'
 	                 }}
 		stage('Deployment'){
 		    steps {
 			
-			sh 'cp target/LoginWebApp.war swapnil@127.0.1.1:/home/swapnil/Documents/GRRAS/apache-tomcat-8.5.35/webapps'
+			sh 'cp target/jordan.war /home/puja/Downloads/apache-tomcat-9.0.70/webapps'
 	}
 }}}
